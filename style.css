@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --h1-size: 1.8em;
+    --h2-size: 1.5em;
+    --h4-size: 1.2em;
+    --p-size: 1rem;
+    --body-weight: 600;
+    --p-weight: 400;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    font-weight: var(--body-weight);
+    line-height: 1.5em;
+    width: 100%;
+}
+.h1, .h2, .h4, .p {
+    padding-inline: 2em;
+}
+.h1 {
+    font-size: var(--h1-size);
+    line-height: 1em;
+}
+.h2 {
+    font-size: var(--h2-size);
+}
+.h4 {
+    font-size: var(--h4-size);
+}
+.p {
+    /* padding: .5em 0; */
+    font-weight: var(--p-weight);
+    color: var(--Grayish-Blue);
+}
+.section {
+    margin-top: 5rem;
+}
+.header {
+    background-image: url(images/bg-header-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-logo {
+    margin: 5% 0;
+    width: 10%;
+    min-width: 100px;
+    height: auto;
+}
+.btns {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ios, .mac {
+    text-decoration: none;
+    padding: .5em 2em;
+    border-radius: 2em;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    margin: 1em;
+}
+
+.ios {
+    filter: drop-shadow(5px 5px 10px var(--Strong-Cyan));
+    background-color: var(--Strong-Cyan);
+}
+.mac {
+    filter: drop-shadow(5px 5px 10px var(--Light-Blue));
+    background-color: var(--Light-Blue);
+}
+.ios:hover, .mac:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+.two-right-div, .six {
+    margin-top: 2em;
+}
+.footer {
+    background-color: var(--Grayish-Blue);
+}
+.footer-a {
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+    margin: .5em;
+}
+.footer-left-img {
+    width: 5%;
+    margin: 2em;
+    min-width: 50px;
+}
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+}
+.footer-right-img {
+    margin: .5em;
+}
+.two-img, .four-img {
+    width: 90%;
+    min-width: 100px;
+    height: auto;
+}
+.section-seven {
+    width: 90%;
+    columns: 50%;
+}
+.seven-img {
+    margin: 1em;
+}
+
+@media screen and (min-width: 480px) {
+    .header {
+        background-image: url(images/bg-header-desktop.png);
+    }
+    .btns {
+        flex-direction: row;
+    }
+    .section-two, .section-six {
+        display: flex;
+        flex-direction: row;
+    }
+}
