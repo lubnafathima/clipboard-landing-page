@@ -20,7 +20,7 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     text-align: center;
     font-weight: var(--body-weight);
-    line-height: 2em;
+    line-height: 1.5em;
     width: 100%;
     word-spacing: .2rem;
 }
