@@ -89,7 +89,7 @@ body {
     margin-top: 2em;
 }
 .footer {
-    background-color: #f7f3f3;
+    background-color: #e9e6e691;
 }
 .footer-a {
     color: var(--Dark-Grayish-Blue);
@@ -160,5 +160,26 @@ body {
     }
     .six {
         display: table-cell;
+    }
+    .six-p {
+        padding-inline: 2em;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+    }
+    .footer-left {
+        width: 20%;
+    }
+    .footer-middle {
+        display: grid;
+        /* grid-gap: 2rem; */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-right {
+        width: 30%;
     }
 }
